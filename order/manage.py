@@ -4,9 +4,12 @@ import www
 
 
 # web server
-manager.add_command( "runserver", Server( host='0.0.0.0', port=app.config[ 'SERVER_PORT' ], use_debugger=True, use_reloader=True ) )
+manager.add_command("runserver",
+                    Server(host='0.0.0.0', port=app.config['SERVER_PORT'], use_debugger=True, use_reloader=True))
+
+
 def main():
-    manager.run(  )
+    manager.run()
 
 
 if __name__ == '__main__':
